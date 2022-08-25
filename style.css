@@ -1,10 +1,42 @@
+@font-face {
+    font-family: RobotoFlex;
+    src: url(fonts/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+.h1 {
+    font-size: 10rem;
+    animation: vars 4s infinite linear;
+    font-family: RobotoFlex;
+    background: #434750;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@keyframes vars {
+    0%, 100%{
+        font-variation-settings:  "wght" 300;
+    }
+     25% {
+        font-variation-settings:   "wght" 600;
+     }
+
+     75% {
+        font-variation-settings:   "wght" 300;
+
+     }
+
+    
+}
+
+.body {
     display: flex;
     justify-content: center;
     align-items: center;
