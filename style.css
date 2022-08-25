@@ -20,6 +20,7 @@
     text-align: center;
 }
 
+
 @keyframes vars {
     0%, 100%{
         font-variation-settings:  "wght" 300;
